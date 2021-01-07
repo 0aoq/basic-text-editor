@@ -76,6 +76,7 @@ setTimeout(() => { // Timeout to allow dependencies to load first
         const file = await fileHandle.getFile()
         const contents = await file.text()
         PostTextArea.value = contents
+        FileSaveBtn.classList.remove("disabled")
         OpenedFile.innerHTML = "Opened: " + await file.name
         display(PostTextArea)
         display(SavePrompt, false)
