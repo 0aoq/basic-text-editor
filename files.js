@@ -1,9 +1,7 @@
 /*
-
 Created 1/7/2021
 Uses local file storage API to load files
 Also accessable by going to https://c-zero.web.app/js/text-editor/files.js
-
 */
 
 // Variables
@@ -74,7 +72,13 @@ FileUploadBtn.addEventListener('click', async() => {
     [fileHandle] = await window.showOpenFilePicker(fileOptions)
     const file = await fileHandle.getFile()
     const contents = await file.text()
-    PostTextArea.value = contents
+
+    if (contents == "") {
+        PostTextArea.value = "This file is empty."
+    } else {
+        PostTextArea.value = contents
+    }
+
     FileSaveBtn.classList.remove("disabled")
     OpenedFile.innerHTML = "Opened: " + await file.name
     display(PostTextArea)
