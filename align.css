@@ -2,6 +2,14 @@
     width: 80%;
 }
 
+.buttons {
+    max-width: 15%;
+}
+
+#OpenedFile {
+    font-size: 2vh;
+}
+
 
 /* small desktop */
 
@@ -16,7 +24,10 @@
 
 @media all and (max-width: 1024px) {
     .editor {
-        width: 70%;
+        width: 60%;
+    }
+    .buttons {
+        max-width: 15%;
     }
 }
 
@@ -26,5 +37,8 @@
 @media all and (max-width: 768px) {
     .editor {
         width: 100%;
+    }
+    .buttons {
+        max-width: 100%;
     }
 }
