@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Just importing my basic stylesheet -->
+    <!-- stylesheets -->
     <link rel="stylesheet" href="https://c-zero.web.app/css/all.css">
     <link rel="stylesheet" href="align.css">
 
@@ -23,20 +23,19 @@
         <div class="buttons push-left">
             <a class="button flat hover less-round" id="FileOpen" style="margin-bottom: 10px;">Open File</a><br>
             <a class="button flat hover less-round" id="FileBlank" style="margin-bottom: 10px;">New File</a><br>
-            <span style="margin-left: 10px; display: block;" id="OpenedFile"></span>
+            <span style="margin-left: 10px; display: block;" id="OpenedFile"></span><br>
+
+            <hr>
+            <div class="text-container-center" style="display: none;" id="saveprompt">
+                <h3 style="color: #444;"><b>UNSAVED CHANGES</b></h3><br>
+                <a class="button blue-btn hover popout" id="FileSave" style="margin-bottom: 10px;">Save File</a><br>
+                <a class="button flat hover" id="FileSaveAs" style="margin-bottom: 10px;">Save File As</a>
+            </div>
         </div>
 
         <div class="editor push-right">
             <textarea name="file-txt1" id="pretext" cols="25" rows="35" placeholder="Your opened file's text will be displayed here! Click 'Open File' to open a file!" disabled></textarea>
             <textarea name="file-txt" id="posttext" cols="25" rows="35" style="display: none;"></textarea>
-
-            <div class="text-container-center" style="display: none;" id="saveprompt">
-                <h2 class="headline-two-fade">YOU HAVE UNSAVED CHANGED</h2>
-                <div class="links">
-                    <a class="button flat hover" id="FileSave" style="margin-bottom: 10px;">Save File</a>
-                    <a class="button flat hover" id="FileSaveAs" style="margin-bottom: 10px;">Save File As</a>
-                </div>
-            </div>
         </div>
     </div>
 
