@@ -19,7 +19,7 @@ textarea {
 
 @media only screen and (max-width: 1400px) {
     .editor {
-        width: 75%;
+        width: 82%;
     }
     textarea {
         height: 60vh;
