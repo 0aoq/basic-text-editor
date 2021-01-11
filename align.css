@@ -11,7 +11,19 @@
 }
 
 textarea {
-    height: 70vh;
+    height: 80vh;
+}
+
+
+/* normal laptop */
+
+@media only screen and (max-width: 1400px) {
+    .editor {
+        width: 75%;
+    }
+    textarea {
+        height: 60vh;
+    }
 }
 
 
