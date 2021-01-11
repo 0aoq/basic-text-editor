@@ -11,6 +11,7 @@
 
     <!-- Just importing my basic stylesheet -->
     <link rel="stylesheet" href="https://c-zero.web.app/css/all.css">
+    <link rel="stylesheet" href="align.css">
 
     <!-- Basic functions I use to make js cleaner -->
     <script src="https://c-zero.web.app/js/brickjs.js" defer></script>
@@ -19,20 +20,22 @@
 <body>
     <div style="margin-top: 10px;"></div>
     <div class="page-container middle">
-        <div class="buttons" style="display: inline-block;">
-            <a class="button flat hover less-round" id="FileOpen" style="margin-bottom: 10px;">Open File</a>
-            <a class="button flat hover less-round" id="FileBlank" style="margin-bottom: 10px;">New File</a>
+        <div class="buttons push-left">
+            <a class="button flat hover less-round" id="FileOpen" style="margin-bottom: 10px;">Open File</a><br>
+            <a class="button flat hover less-round" id="FileBlank" style="margin-bottom: 10px;">New File</a><br>
             <span class="headline--two" style="margin-left: 10px; display: none;" id="OpenedFile">Opened: </span>
         </div>
 
-        <textarea name="file-txt1" id="pretext" cols="25" rows="35" placeholder="Your opened file's text will be displayed here! Click 'Open File' to open a file!" disabled></textarea>
-        <textarea name="file-txt" id="posttext" cols="25" rows="35" style="display: none;"></textarea>
+        <div class="editor push-right">
+            <textarea name="file-txt1" id="pretext" cols="25" rows="35" placeholder="Your opened file's text will be displayed here! Click 'Open File' to open a file!" disabled></textarea>
+            <textarea name="file-txt" id="posttext" cols="25" rows="35" style="display: none;"></textarea>
 
-        <div class="text-container-center" style="display: none;" id="saveprompt">
-            <h2 class="headline-two-fade">YOU HAVE UNSAVED CHANGED</h2>
-            <div class="links">
-                <a class="button flat hover" id="FileSave" style="margin-bottom: 10px;">Save File</a>
-                <a class="button flat hover" id="FileSaveAs" style="margin-bottom: 10px;">Save File As</a>
+            <div class="text-container-center" style="display: none;" id="saveprompt">
+                <h2 class="headline-two-fade">YOU HAVE UNSAVED CHANGED</h2>
+                <div class="links">
+                    <a class="button flat hover" id="FileSave" style="margin-bottom: 10px;">Save File</a>
+                    <a class="button flat hover" id="FileSaveAs" style="margin-bottom: 10px;">Save File As</a>
+                </div>
             </div>
         </div>
     </div>
