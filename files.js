@@ -59,6 +59,7 @@ const fileOptions = {
             'cs/plain': ['.cs'],
             'gitignore/plain': ['.gitignore'],
             'cache/plain': ['.cache'],
+            'markdown/plain' : ['.md'],
             // Add other text file types below
             // 'example/plain': ['.example'],
         },
