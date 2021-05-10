@@ -1,9 +1,3 @@
-/*
-Created 1/7/2021
-Uses local file storage API to load files
-Also accessable by going to https://c-zero.web.app/js/text-editor/files.js
-*/
-
 // Variables
 
 const FileUploadBtn = find("#FileOpen")
